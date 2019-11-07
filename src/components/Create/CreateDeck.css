@@ -1,0 +1,129 @@
+.test {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  z-index: 0;
+  min-height: 100vh;
+  background-color: #F4F6F8;
+}
+
+.create-deck {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.create-custom-deck {
+  display: flex;
+  justify-content: center;
+ 
+  background-color: #E4E7F1;
+}
+
+#custom-deck-wrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 6em;
+  margin-bottom: 6em;
+  background-color: white;
+  height: 40em;
+  width: 24em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+a.create-custom-button {
+  border-radius: 1em;
+  background-color: #84E296;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Red Hat Display';
+  font-weight: 500;
+  margin-right: 35%;
+  margin-left: 35%;
+  margin-bottom: 22%;
+  cursor: pointer;
+  padding: 0.2em;
+  text-decoration: none;
+}
+
+a.create-custom-button:hover {
+  border-radius: 1em;
+  background-color: #27AE60;
+}
+
+a.create-english-button {
+  border-radius: 1em;
+  background-color: #AFDEDC;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Red Hat Display';
+  font-weight: 500;
+  margin-right: 35%;
+  margin-left: 35%;
+  margin-bottom: 22%;
+  cursor: pointer;
+  padding: 0.2em;
+  text-decoration: none;
+}
+
+a.create-english-button:hover {
+  border-radius: 1em;
+  background-color: #77C7C3;
+}
+
+.deck-wrap-top-border {
+  position: absolute;
+  width: 24em;
+  height: 2em;
+  background: #84E296;
+  border-radius: 20px 20px 0px 0px;
+}
+
+div .explanation-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20%;
+  font-family: "Red Hat Display";
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #84E296;
+}
+
+div .explanation-text {
+  font-family: "Red Hat Display";
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #6D6986;
+  text-align: center;
+  padding: 0 2em 0 2em;
+}
+
+.deck-wrap-top-border-blue {
+  position: absolute;
+  width: 24em;
+  height: 2em;
+  background: #AFDEDC;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.create-english-deck {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+div .explanation-title-english {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20%;
+  font-family: "Red Hat Display";
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #AFDEDC;
+}
