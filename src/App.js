@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import CreateDeck from './components/Create/CreateDeck';
 import CreateCustomDeck from './components/Create/CreateCustomDeck';
 import DeckList from './components/Learn/DeckList';
@@ -16,9 +16,7 @@ import PracticeDeck from './components/Practice/PracticeDeck';
 import Profile from './components/User/Profile';
 import Landing from './components/User/Landing';
 
-
 function App() {
-
   return (
     <Router>
       <Switch>
@@ -28,9 +26,17 @@ function App() {
 
         <Route exact path="/create" component={CreateDeck} />
         <Route exact path="/create/customdeck" component={CreateCustomDeck} />
-        <Route exact path="/edit/deck/:deckID/custom" component={AddCustomDeck} />
+        <Route
+          exact
+          path="/edit/deck/:deckID/custom"
+          component={AddCustomDeck}
+        />
         <Route exact path="/create/englishdeck" component={CreateEnglishDeck} />
-        <Route exact path="/edit/deck/:deckID/english" component={AddEnglishDeck} />
+        <Route
+          exact
+          path="/edit/deck/:deckID/english"
+          component={AddEnglishDeck}
+        />
 
         <Route exact path="/decks" component={DeckList} />
         <Route exact path="/decks/:deckID/cards" component={CardList} />
@@ -39,7 +45,7 @@ function App() {
         <Route exact path="/:link" component={SharedCardList} />
         <Route exact path="/" component={Landing} />
       </Switch>
-  </Router>
+    </Router>
   );
 }
 
